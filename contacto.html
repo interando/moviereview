@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contacto</title>
+<link rel="stylesheet" href="./css/style.css">
+<link rel="stylesheet" href="./css/main.css">
+<link rel=stylesheet href="./css/bootstrap.min.css">
+
+
+</head>
+<body>
+
+
+    <header class="header">
+        <div class="logo"> <a href="index.html"><img src="./img/logo.png" alt=""></a>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Películas del mes</a></li>
+                <li><a href="criticas.html">Críticas</a></li>
+                <li><a href="premios.html">Premios</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+                
+            </ul>
+        </nav>
+
+
+    </header>
+  
+
+
+<!-- Carousel hero -->
+<div id="carru" class="carousel slide" data-bs-ride="carousel">
+<div class="carousel-inner">
+
+<div class="carousel-item active">
+<img src="./img/hero3-top.jpg" class="img-fluid">
+<div class="carousel-caption">
+<h2>Dejanos tus críticas cinematográficas</h2>
+<p>Tomamos las mejores devoluciones y publicamos en nuestro blog! </p>
+</div>
+</div>
+    </div>
+    </div>
+<!-- Carousel hero fin -->
+  
+
+
+     
+  <section id="contacto">
+            <h2>Dejános tus comentarios</h2>
+           <p class="text-center">Tu opinión sobre las pelis que publicamos nos importa.</p>
+            <form action="index.html" name="Form">
+
+                <div class=" ">
+    
+                    <div class="item">
+                        <label for="nombre">Nombre</label>
+                        <span class="sinCompletar" id="pNombre" style="display: block;">Complete con su nombre</span>
+                        <input id="nombre" name="nombre" type="text" placeholder="Tu nombre" onblur="validarNombre()">
+                        
+                    </div>
+    
+                    <div class="item">
+                        <label for="telefono">Teléfono</label>
+                        <span class="sinCompletar" id="pTelefono" style="display: none">Complete con su número de teléfono</span>
+                        <input id="telefono" name="telefono" type="number" placeholder="Teléfono" onblur="validarTelefono()">
+                    </div>
+    
+                    <div class="item">
+                        <label for="email">Correo electrónico</label>
+                        <span class="sinCompletar" id="pEmail" style="display: none">Complete con su dirección de correo electrónico</span>
+                        <span class="sinCompletar" id="pEmailInvalido" style="display: none">Email inválido</span>
+                        <input id="email" name="email" type="email" placeholder="Dirección de correo" onblur="validarEmail()">
+                    </div>
+    
+                    <div class="item">
+                        <label for="mensaje">Dejanos tu mensaje</label>
+                        <span class="sinCompletar" id="pMensaje" style="display: none">Complete con su mensaje</span>
+                        <textarea name="mensaje" id="mensaje" cols="20" rows="5" onblur="validarMensaje()"></textarea>
+                    </div>
+                    <div id="botones">
+                        <button type="button" onclick="validarContacto()">Enviar</button>
+                        <button type="reset">Borrar</button>
+                    </div>
+                </div>
+                <link rel="stylesheet" href="css/contactocss.css">
+                <script src="js/contacto.js"></script>
+            </form>
+         </section>   
+
+     
+  
+
+     
+     
+     
+    </div><!--wrapper cierro-->
+    
+
+<footer>
+<section class="container-footer">
+<div class="area1">
+<img src="./img/logo-foot.png" alt="">
+<p>Sitio para descubrir una realidad distinta y diferentes puntos de vistas sobre la realidad cinematográfica en el mundo.</p>
+</div>
+
+
+    
+    <div class="area2">
+
+    <h3>Navegacion</h3>
+    <ul>
+        <li><a href="#">info@moviereview.com</a></li>
+        <li><a href="#">+54 11 4877 90088</a></li>
+        <li><a href="#">+54 11 15 89 67 53</a></li>
+        <li><a href="#">Av. Santa Fé 8933</a></li>
+    </ul>
+</div>
+
+<div class="area3">
+    <h3>Seguinos!</h3>
+    <ul>
+        <li><a href="#"><i class="fa-brands fa-facebook"></i>moviereview.ok</a></li>
+        <li><a href="#"><i class="fa-brands fa-square-instagram"></i>moviereview.ok</a></li>
+        <li><a href="#"><i class="fa-brands fa-youtube"></i>moviereview</a></li>
+       
+     </ul>
+</div>
+
+</section>
+
+<section class="copyright">2023 Grupo 16 / CODO a CODO / Todos los derechos reservados</section>
+
+</footer>
+<script src="https://kit.fontawesome.com/3058924f53.js" crossorigin="anonymous"></script>
+<script src="./js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
