@@ -1,35 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en"><head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Movie Review</title>
+    
+<!--ESTILOS DEL SITIO-->    
 <link rel="stylesheet" href="./css/style.css">
-<link rel="stylesheet" href="./css/main.css">
-<link rel=stylesheet href="./css/bootstrap.min.css">
+    
+<!--BOOTSTRAP-->
+<link rel="stylesheet" href="./css/bootstrap.min.css">
 
+<!--FAVICON-->
+<link rel="icon" type="image/x-icon" href="img/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
+<link rel="manifest" href="./img/site.webmanifest">
 
 </head>
 <body>
 
-
     <header class="header">
-        <div class="logo">
-            <img src="./img/logo.png" alt="">
-        </div>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#peliculasdelmes">Películas del mes</a></li>
-                <li><a href="criticas.html">Críticas</a></li>
-                <li><a href="premios.html">Premios</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                
-            </ul>
-        </nav>
+          <div class="logo">
+              <img src="./img/logo.png" alt="">
+          </div>
+          <nav class="hide-d">
+          <ul class="nav-links">
+          <li><a href="#peliculasdelmes">Películas del mes</a></li>
+          <li><a href="criticas.html">Críticas</a></li>
+          <li><a href="premios.html">Premios</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+          </nav>
 
-    </header>
-  
+        </header>
+    
+        <nav class="hide-m">
+        <ul class="nav-links">
+        <li><a href="#peliculasdelmes">Películas del mes</a></li>
+        <li><a href="criticas.html">Críticas</a></li>
+        <li><a href="premios.html">Premios</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+        </nav>
 
 
 
@@ -92,8 +106,8 @@
 
 
     
-<span id="peliculasdelmes"></span>  
- <div class="main-wrapper">
+
+    <section class="main-wrapper" id="peliculasdelmes">
             <h2>Peliculas del mes</h2>
 
 <div class= "article-collection">
@@ -164,12 +178,12 @@ Más info
 </div>
 </article><!-- fin pelicula individual -->
      
+<!--
 </div>
- 
-
-     
+   
      
 <div class= "article-collection">
+  -->
 
 <article>
 <!-- pelicula individual --> 
@@ -243,7 +257,7 @@ Más info
 
     
     
-        </div>
+        </section>
                 
                           
                 
@@ -261,7 +275,7 @@ Más info
     
     <div class="area2">
 
-    <h3>Navegacion</h3>
+    <h3>Datos de contacto</h3>
     <ul>
         <li><a href="#">info@moviereview.com</a></li>
         <li><a href="#">+54 11 4877 90088</a></li>
@@ -431,8 +445,28 @@ Una película que marcara un antes y un después en la historia del cine moderno
 
 
 
+<!--codigo del boton que aparece abajo-->
+  <script>
+// Get the button
+let mybutton = document.getElementById("Btntop");
 
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
 
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script> 
 </body>
 
 </html>

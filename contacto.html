@@ -5,30 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Contacto</title>
+<!--ESTILOS DEL SITIO-->    
 <link rel="stylesheet" href="./css/style.css">
-<link rel="stylesheet" href="./css/main.css">
-<link rel=stylesheet href="./css/bootstrap.min.css">
+    
+<!--BOOTSTRAP-->
+<link rel="stylesheet" href="./css/bootstrap.min.css">
+
+<!--FAVICON-->
+<link rel="icon" type="image/x-icon" href="img/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
+<link rel="manifest" href="./img/site.webmanifest">
 
 
 </head>
 <body>
 
 
-    <header class="header">
-        <div class="logo"> <a href="index.html"><img src="./img/logo.png" alt=""></a>
-        </div>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="index.html">Películas del mes</a></li>
-                <li><a href="criticas.html">Críticas</a></li>
-                <li><a href="premios.html">Premios</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-                
-            </ul>
+     <header class="header">
+          <div class="logo">
+              <img src="./img/logo.png" alt="">
+          </div>
+          <nav class="hide-d">
+          <ul class="nav-links">
+          <li><a href="index.html#peliculasdelmes">Películas del mes</a></li>
+          <li><a href="criticas.html">Críticas</a></li>
+          <li><a href="premios.html">Premios</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+          </nav>
+
+        </header>
+    
+        <nav class="hide-m">
+        <ul class="nav-links">
+        <li><a href="index.html#peliculasdelmes">Películas del mes</a></li>
+        <li><a href="criticas.html">Críticas</a></li>
+        <li><a href="premios.html">Premios</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        </ul>
         </nav>
-
-
-    </header>
   
 
 
@@ -53,43 +70,47 @@
   <section id="contacto">
             <h2>Dejános tus comentarios</h2>
            <p class="text-center">Tu opinión sobre las pelis que publicamos nos importa.</p>
-            <form action="index.html" name="Form">
-
-                <div class=" ">
+            
+      
+      
+      <form action="procesa.php" name="Form">
     
-                    <div class="item">
-                        <label for="nombre">Nombre</label>
-                        <span class="sinCompletar" id="pNombre" style="display: block;">Complete con su nombre</span>
-                        <input id="nombre" name="nombre" type="text" placeholder="Tu nombre" onblur="validarNombre()">
-                        
+                    <div class=" ">
+        
+                        <div class="item">
+                            <label for="nombre">Nombre</label>
+                            <span class="sinCompletar" id="pNombre" style="display: none">Complete con su nombre</span>
+                            <input id="nombre" name="nombre" type="text" placeholder="Tu nombre" onblur="validarNombre()">
+                            
+                        </div>
+        
+                        <div class="item">
+                            <label for="telefono">Teléfono</label>
+                            <span class="sinCompletar" id="pTelefono" style="display: none">Complete con su número de teléfono</span>
+                            <input id="telefono" name="telefono" type="number" placeholder="Teléfono" onblur="validarTelefono()">
+                        </div>
+        
+                        <div class="item">
+                            <label for="email">Correo electrónico</label>
+                            <span class="sinCompletar" id="pEmail" style="display: none">Complete con su dirección de correo electrónico</span>
+                            <span class="sinCompletar" id="pEmailInvalido" style="display: none">Email inválido</span>
+                            <input id="email" name="email" type="email" placeholder="Dirección de correo" onblur="validarEmail()">
+                        </div>
+        
+                        <div class="item">
+                            <label for="mensaje">Dejanos tu mensaje</label>
+                            <span class="sinCompletar" id="pMensaje" style="display: none">Complete con su mensaje</span>
+                            <textarea name="mensaje" id="mensaje" cols="20" rows="5" onblur="validarMensaje()"></textarea>
+                        </div>
+                        <div id="botones">
+                            <button id="btn-e" type="button" onclick="validarContacto()">Enviar</button>
+                            <button id="btn-b" type="reset">Borrar</button>
+                        </div>
                     </div>
-    
-                    <div class="item">
-                        <label for="telefono">Teléfono</label>
-                        <span class="sinCompletar" id="pTelefono" style="display: none">Complete con su número de teléfono</span>
-                        <input id="telefono" name="telefono" type="number" placeholder="Teléfono" onblur="validarTelefono()">
-                    </div>
-    
-                    <div class="item">
-                        <label for="email">Correo electrónico</label>
-                        <span class="sinCompletar" id="pEmail" style="display: none">Complete con su dirección de correo electrónico</span>
-                        <span class="sinCompletar" id="pEmailInvalido" style="display: none">Email inválido</span>
-                        <input id="email" name="email" type="email" placeholder="Dirección de correo" onblur="validarEmail()">
-                    </div>
-    
-                    <div class="item">
-                        <label for="mensaje">Dejanos tu mensaje</label>
-                        <span class="sinCompletar" id="pMensaje" style="display: none">Complete con su mensaje</span>
-                        <textarea name="mensaje" id="mensaje" cols="20" rows="5" onblur="validarMensaje()"></textarea>
-                    </div>
-                    <div id="botones">
-                        <button type="button" onclick="validarContacto()">Enviar</button>
-                        <button type="reset">Borrar</button>
-                    </div>
-                </div>
-                <link rel="stylesheet" href="css/contactocss.css">
-                <script src="js/contacto.js"></script>
-            </form>
+                
+                </form>
+      
+      
          </section>   
 
      
@@ -112,7 +133,7 @@
     
     <div class="area2">
 
-    <h3>Navegacion</h3>
+    <h3>Datos de contacto</h3>
     <ul>
         <li><a href="#">info@moviereview.com</a></li>
         <li><a href="#">+54 11 4877 90088</a></li>
@@ -138,6 +159,7 @@
 </footer>
 <script src="https://kit.fontawesome.com/3058924f53.js" crossorigin="anonymous"></script>
 <script src="./js/bootstrap.bundle.min.js"></script>
+<script src="./js/validar.js"></script>
 </body>
 
 </html>
