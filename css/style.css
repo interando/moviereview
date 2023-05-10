@@ -140,14 +140,16 @@ transform: scale(0.9);
 
 /*BOOsTrap FORZADO*/
 .carousel-caption {
-    positio: absolute;
+   
     bottom: 35%!important;
 }
 
 .carousel-caption h2{
+    
     font-size:63px!important;
     
 }
+
 .carousel-control-next, .carousel-control-prev {bottom:35%!important;}
 
 /*estilos del formulario*/
