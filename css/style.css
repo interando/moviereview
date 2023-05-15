@@ -254,7 +254,6 @@ display: flex;
     opacity: 0.8;
     font-size: 15px;
 }
-
 .location button{
     background: #b1152a!important;
     padding: 8px 10px;
@@ -264,6 +263,18 @@ display: flex;
     color: #fff;
     border-radius: 25px;
     cursor: pointer;
+  
+}
+.location button:hover{
+    background: #f10828!important;
+    padding: 8px 10px;
+    width: 50%;
+    display: block;
+    border: none;
+    color: #fff;
+    border-radius: 25px;
+    cursor: pointer;
+    transform: (0px,-10px);
 }
 
 
