@@ -29,7 +29,7 @@ margin-right: auto;
 height: 60px;
 width: auto;
 transition: all 0.3s;
-}
+} /*Animacion*/
 .header .logo img:hover{
     transform: scale(1.2);
 }
@@ -46,7 +46,7 @@ margin-top: 15px;
 
 .header .nav-links li:hover{
     transform: scale(1.1);
-}
+}/*Animacion*/
 
 .header .nav-links a{
     font-size: 18px;
@@ -58,31 +58,6 @@ margin-top: 15px;
 .header .nav-links li a:hover{
 color: #b1152a;
  }
-
-
-
-
-.header .btn button{
-    background: #b1152a;
-    padding: 8px 10px;
-    width: 50%;
-    display: block;
-    border: none;
-    color: #fff;
-    border-radius: 25px;
-    cursor: pointer;
-  transition: all 0.3s ease 0s;
-    width: 100%;
-  
-}
-
-.header .btn button:hover{
-    background-color: #ff3752;
-    color: #ffffff;
-    transform: scale(1.1);
-}
-
-
 /*MAIN*/
 .titulos{font-size: 35px; display: block;text-align: center;line-height: 40px; color: #000000; margin-top: 20px; padding-top: 80px;}
 .container{
@@ -140,7 +115,7 @@ transform: scale(0.9);
 
 /*BOOsTrap FORZADO*/
 .carousel-caption {
-    positio: absolute;
+    
     bottom: 35%!important;
 }
 
@@ -281,7 +256,7 @@ display: flex;
 }
 
 .location button{
-    background: #b1152a;
+    background: #b1152a!important;
     padding: 8px 10px;
     width: 50%;
     display: block;
@@ -290,6 +265,8 @@ display: flex;
     border-radius: 25px;
     cursor: pointer;
 }
+
+
 
 
 
@@ -304,7 +281,7 @@ display: flex;
     #carru{display:none;}
     
     .location button{
-    background: #b1152a;
+    background: #b1152a!important;
     padding: 8px 10px;
     width: 100%;
     display: block;
